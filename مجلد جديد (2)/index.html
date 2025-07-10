@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en-ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog.Eng.Abdullahe Mohammed-المهندس المبرمج عبدالله</title>
+    <meta name="author" content="مهندس برمجة -Programming Engineer">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/imgs/Prg.Eng.Abdo Flaw.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            margin: 0;
+            background: #f5f6fa;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #005c97 0%, #363795 100%);
+            color: #fff;
+            padding: 40px 0 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #363795;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            background-color: #005c97;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 24px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(54,55,149,0.07);
+            padding: 32px 28px;
+        }
+        h2 {
+            color: #363795;
+            margin-top: 0;
+        }
+        footer {
+            background: #363795;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 16px 8px; }
+            header h1 { font-size: 2rem; }
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        section p, section ul {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        section ul {
+            padding-left: 20px;
+        }
+        section ul li {
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        section a {
+            color: #005c97;
+            text-decoration: none;
+        }
+        section a:hover {
+            text-decoration: underline;
+        }
+        section#contact p {
+            font-size: 1.1rem;
+        }
+        section#contact a {
+            font-weight: 700;
+        }
+        section#contact a:hover {
+            color: #363795;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media (min-width: 601px) {
+            nav a {
+                display: inline-block;
+            }
+        }
+        section {
+            display: none; /* إخفاء جميع الأقسام */
+        }
+        section#about {
+            display: block; /* إظهار قسم "من نحن" بشكل افتراضي */
+        }
+        section#services {
+            display: none; /* إخفاء قسم "الخدمات" */
+        }
+        section#contact {
+            display: none; /* إخفاء قسم "تواصل معنا" */
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 601px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+            header h1 {
+                font-size: 3.2rem;
+            }
+            nav a {
+                font-size: 1.3rem;
+            }
+        }
+        @media (min-width: 1600px) {
+            header h1 {
+                font-size: 3.6rem;
+            }
+            nav a {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 2000px) {
+            header h1 {
+                font-size: 4rem;
+            }
+            nav a {
+                font-size: 1.7rem;
+            }
+        }
+        @media (max-width: 800px) {
+            .container {
+                padding: 20px 15px;
+            }
+            section p, section ul {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 801px) {
+            .container {
+                padding: 32px 28px;
+            }
+            section p, section ul {
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 600px) {
+            section ul {
+                padding-left: 15px;
+            }
+            section ul li {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 601px) {
+            section ul {
+                padding-left: 20px;
+            }
+            section ul li {
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            section ul li {
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 401px) {
+            section ul li {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 600px) {
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 601px) {
+            footer {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+        @media (min-width: 401px) {
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 800px) {
+            header {
+                padding: 30px 0 20px 0;
+            }
+            nav {
+                padding: 8px 0;
+            }
+        }
+        @media (min-width: 801px) {
+            header {
+                padding: 40px 0 30px 0;
+            }
+            nav {
+                padding: 10px 0;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 601px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+            header h1 {
+                font-size: 3.2rem;
+            }
+            nav a {
+                font-size: 1.3rem;
+            }
+        }
+        @media (min-width: 1600px) {
+            header h1 {
+                font-size: 3.6rem;
+            }
+            nav a {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 2000px) {
+            header h1 {
+                font-size: 4rem;
+            }
+            nav a {
+                font-size: 1.7rem;
+            }
+        }
+        @media (max-width: 800px) {
+            .container {
+                padding: 20px 15px;
+            }
+            section p, section ul {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 801px) {
+            .container {
+                padding: 32px 28px;
+            }
+            section p, section ul {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            section ul {
+                padding-left: 15px;
+            }
+            section ul li {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 601px) {
+            section ul {
+                padding-left: 20px;
+            }
+            section ul li {
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            section ul li {
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 401px) {
+            section ul li {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 600px) {
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- إضافة شعار من مجلد assets -->
+<div style="text-align:center; margin-top: 20px;">
+</div>
+    <header>
+        <img src="assets/imgs/Prg.Eng.Abdo Flaw.png" alt="شعار الموقع"
+            style="max-width:120px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <p>مرحباً بك في موقعك العصري!</p>
+    </header>
+    <nav>
+        <a href="#" onclick="scrollToSection('home')">الصفحة الرئيسية</a>
+        <a href="#" onclick="scrollToSection('about')">من أنا</a>
+        <a href="#" onclick="scrollToSection('services')">الخدمات</a>
+        <a href="#" onclick="scrollToSection('contact')">تواصل معي</a>
+        <a href="#" onclick="scrollToSection('projects')">مشاريعي</a>
+    </nav>
+    <section id="home" style="text-align: center; padding: 40px 0;">
+        <h1>Prog.Eng.Abdullahe Mohammed - المهندس المبرمج عبدالله</h1>
+        <p>مهندس برمجة متخصص في تطوير المواقع الإلكترونية بتصاميم عصرية واحترافية.</p>
+        <p>أهلاً وسهلاً بك في موقعي الشخصي!</p>
+        <p>هنا ستجد معلومات عني، خدماتي، ومشاريعي السابقة.</p>
+        <p>لا تتردد في التواصل معي لأي استفسار أو طلب.</p>  
+        <p>أتطلع للعمل معك!</p>
+    </section>          
+
+    <div class="container">
+        <section id="about">
+            <h2>من أنا</h2>
+            <p>
+                أنا مهندس برمجة متخصص في تطوير المواقع الإلكترونية بتصاميم عصرية واحترافية تناسب جميع الأعمال.
+            </p>
+            <p>
+                أعمل على تقديم حلول تقنية مبتكرة تساعد في تعزيز وجودك الرقمي وزيادة تفاعل العملاء مع خدماتك.
+            </p>
+            <p>
+                خبرتي تشمل تصميم مواقع متجاوبة، تطوير تطبيقات الويب، وتحسين محركات البحث (SEO) لضمان ظهور موقعك في الصفحات الأولى.
+            </p>
+            <p>
+                أؤمن بأهمية التصميم الجيد والتجربة المستخدم الممتازة، وأسعى دائماً لتقديم أفضل الحلول التقنية لعملائي.
+            </p>
+            <p>
+                إذا كنت تبحث عن مهندس برمجة محترف لتطوير موقعك الإلكتروني، فأنا هنا لمساعدتك.
+            </p>
+            <p>
+                يمكنك الاطلاع على مشاريعي السابقة عبر حسابي على GitHub أو LinkedIn.
+            </p>    
+            <p>
+                لمزيد من المعلومات حول خبرتي ومشاريعي، لا تتردد في التواصل معي.
+            </p>
+            <p>
+                <a href="https://github.com/abdoflaw01" target="_blank">مشاريعي على GitHub</a>
+            </p>
+            <p>
+                <a href="https://abdoflaw01.github.io/Prog.Eng.AbdullaheMohammed.com/" target="_blank">موقع العملاء</a>
+            </p>
+        </section>
+        <section id="services">
+            <h2>الخدمات</h2>
+            <ul>
+                <li>تصميم مواقع متجاوبة</li>
+                <li>تطوير مواقع الويب المتخصصة</li>
+                <li>تحسين محركات البحث (SEO)</li>
+                <li>دعم فني واستشارات تقنية</li>
+                <li>تسويق رقمي وحملات إعلانية</li>                
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>تواصل معي</h2>
+            <p>
+                يمكنك التواصل معي عبر البريد الإلكتروني: <a href="mailto:abdoflaw01@gmail.com">
+                    <img src="assets/svg/email.svg" alt="البريد الإلكتروني" style="width: 16px; height: 16px; vertical-align: middle; background-color: #005c97; 
+                    color: #eeeeee;" />
+                    abdoflaw01@gmail.com</a>
+            </p>
+            <p>
+                يمكنك أيضاً التواصل معي عبر حسابي على WhatsApp: <a href="https://wa.me/+201004873824" target="_blank">
+                    <img src="assets/svg/phone.svg" alt="WhatsApp" 
+                    style="background-color: #005c97;
+                    color: white;">01004873824</a>
+            </p>
+            <p>
+                يمكنك أيضا متابعتي علي GitHub: <a href="https://github.com/abdoflaw01" target="_blank">
+                    <img src="assets/svg/github.svg" alt="GitHub" style="width: 16px; height: 16px; vertical-align: middle; background-color: #005c97; color: #eeeeee;" />مشاريعي على GitHub</a>
+            </p>
+        </section>
+    </div>
+    <section id="projects">
+        <h2>مشاريعي</h2>
+        <p>
+            قمت بتطوير العديد من المشاريع الناجحة في مجالات مختلفة، تشمل تصميم مواقع التجارة الإلكترونية، تطوير تطبيقات الويب، وتحسين تجربة المستخدم.
+        </p>
+        <p>
+            يمكنك الاطلاع على بعض من أعمالي السابقة عبر حسابي على GitHub أو LinkedIn.
+        </p>
+        <p>
+            لمزيد من المعلومات حول مشاريعي، لا تتردد في التواصل معي.
+        </p>
+        <p>
+            <a href="https://github.com/abdoflaw01" target="_blank">مشاريعي على GitHub</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/abdoflaw01/" target="_blank">ملفي الشخصي على LinkedIn</a>
+        </p>
+    </section>
+    <footer>
+        &copy; Prog.Eng.Abdullahe Mohammed - المهندس المبرمج عبدالله
+    </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            // إخفاء جميع الأقسام
+            document.querySelectorAll('section').forEach(function(sec) {
+                sec.style.display = 'none';
+            });
+            // إظهار القسم المطلوب
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'block';
+                // تمرير الصفحة إلى الأعلى عند تغيير القسم
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
